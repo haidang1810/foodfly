@@ -1,0 +1,88 @@
+.bg-primary{
+    background-color: #1A94FF !important;
+}
+body{
+    background: #e0e0e0;
+}
+.container-fluid{
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+.searchBar{
+    height: 35px;
+    width: 472px;
+    position: relative;
+    margin-left: -35%;
+}
+.chosen-container-single .chosen-single{
+    height: 35px !important;
+    width: 100px !important;
+    border-radius: 0 !important;
+    line-height: 35px ;
+    background-color: white !important;
+    color: black;
+    border: none !important;
+    border-right: 1px solid #ccc !important;
+}
+
+.searchBar__input{
+    height: 35px;
+    width: 270px;
+    position: absolute;
+    left: 100px;
+    border: 0px;
+    padding-left: 10px;
+    outline: none;
+}
+.searchBar__button{
+    position: absolute;
+    left: 370px;
+    border: 0px;
+    height: 35px;
+    width: 100px;
+    background-color: #0D5CB6;
+    color: white;
+    font-size: 14px;
+}
+.searchBar__button i{
+    margin-right: 5px;
+}
+.navbar__info{
+    height: 35px;
+}
+.navbar__info button{
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+.navbar__info-nofi i{
+    margin-right: 5px;
+    font-size: 16px;
+}
+.row-container{
+    
+    margin-top: 20px;
+}
+.category{
+    background: #fff;
+    padding: 10px 25px;
+}
+.category__heading{
+    font-weight: 500;
+    font-size: 20px;
+}
+.category__list{
+    list-style: none;
+    padding: 0;
+}
+.category__item{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.category__item a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+}
