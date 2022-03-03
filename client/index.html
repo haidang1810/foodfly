@@ -34,25 +34,197 @@
                 </div>
             </div>
         </nav>
-        <div class="row row-container">
-            <div class="container-fluid">
+        <div class="row-container">
+            <div class="row container-fluid">
                 <nav class="category col-sm-2">
                     <h3 class="category__heading">Danh mục</h3>
                     <ul class="category__list">
                         <li class="category__item">
-                            <a href="#">Thức ăn</a>
+                            <input type="checkbox" id="1" class="category__item-input">
+                            <label for="1">Thức ăn</label>
                         </li>
                         <li class="category__item">
-                            <a href="#">Đồ uống</a>
+                            <input type="checkbox" id="2" class="category__item-input">
+                            <label for="2">Đồ uống</label>
                         </li>
                         <li class="category__item">
-                            <a href="#">Bánh ngọt</a>
+                            <input type="checkbox" id="3" class="category__item-input">
+                            <label for="3">Bánh ngọt</label>
                         </li>
                         <li class="category__item">
-                            <a href="#">Điểm tâm</a>
+                            <input type="checkbox" id="4" class="category__item-input">
+                            <label for="4">Coffee</label>
                         </li>
                     </ul>
                 </nav>
+                <div class="content col-sm-10">
+                    <div class="filter">
+                        Xếp theo
+                        <select class="filterBar filterBar__select">
+                            <option value="">Mới nhất</option>
+                            <option value="">Cũ nhất</option>
+                            <option value="">Tên A -> Z</option>
+                            <option value="">Tên Z -> A</option>
+                        </select>
+                        <button class="filterBar fillterBar__button">Đánh giá tốt nhất</button>
+                        <button class="filterBar fillterBar__button">Xem nhiều nhất</button>
+                        <button class="filterBar fillterBar__button">Yêu thich</button>
+                        <select class="filterBar filterBar__select">
+                            <option value="">Cao cấp</option>
+                            <option value="">Trung cấp</option>
+                            <option value="">Bình dân</option>
+                        </select>
+                    </div>
+                    <div class="list-item">
+                        <div class="card">
+                            <img src="./shared/images/slide-1.png" class="card-img-top" alt="Đang tải...">
+                            <div class="card-body">
+                                <div class="card-rating">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="card-title">Tên của hàng được 34 ký tự...</div>
+                                <div class="card-text">Đây là địa chỉ....</div>
+                                <div class="card-info">Mở của: 08:00 - 16:00</div>
+                                <div class="card-produce"><i class="fa fa-tag ng-hide"></i>Coffee/Bán ngọt</div>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa fa-comment"> 200</i>
+                                <i class="fa-solid fa-heart"> 100</i>
+                                <button><i class="fa-solid fa-heart"></i> Lưu</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./shared/images/slide-1.png" class="card-img-top" alt="Đang tải...">
+                            <div class="card-body">
+                                <div class="card-rating">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="card-title">Tên của hàng được 34 ký tự...</div>
+                                <div class="card-text">Đây là địa chỉ....</div>
+                                <div class="card-info">Mở của: 08:00 - 16:00</div>
+                                <div class="card-produce"><i class="fa fa-tag ng-hide"></i>Coffee/Bán ngọt</div>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa fa-comment"> 200</i>
+                                <i class="fa-solid fa-heart"> 100</i>
+                                <button><i class="fa-solid fa-heart"></i> Lưu</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./shared/images/slide-1.png" class="card-img-top" alt="Đang tải...">
+                            <div class="card-body">
+                                <div class="card-rating">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="card-title">Tên của hàng được 34 ký tự...</div>
+                                <div class="card-text">Đây là địa chỉ....</div>
+                                <div class="card-info">Mở của: 08:00 - 16:00</div>
+                                <div class="card-produce"><i class="fa fa-tag ng-hide"></i>Coffee/Bán ngọt</div>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa fa-comment"> 200</i>
+                                <i class="fa-solid fa-heart"> 100</i>
+                                <button><i class="fa-solid fa-heart"></i> Lưu</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./shared/images/slide-1.png" class="card-img-top" alt="Đang tải...">
+                            <div class="card-body">
+                                <div class="card-rating">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="card-title">Tên của hàng được 34 ký tự...</div>
+                                <div class="card-text">Đây là địa chỉ....</div>
+                                <div class="card-info">Mở của: 08:00 - 16:00</div>
+                                <div class="card-produce"><i class="fa fa-tag ng-hide"></i>Coffee/Bán ngọt</div>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa fa-comment"> 200</i>
+                                <i class="fa-solid fa-heart"> 100</i>
+                                <button><i class="fa-solid fa-heart"></i> Lưu</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./shared/images/slide-1.png" class="card-img-top" alt="Đang tải...">
+                            <div class="card-body">
+                                <div class="card-rating">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="card-title">Tên của hàng được 34 ký tự...</div>
+                                <div class="card-text">Đây là địa chỉ....</div>
+                                <div class="card-info">Mở của: 08:00 - 16:00</div>
+                                <div class="card-produce"><i class="fa fa-tag ng-hide"></i>Coffee/Bán ngọt</div>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa fa-comment"> 200</i>
+                                <i class="fa-solid fa-heart"> 100</i>
+                                <button><i class="fa-solid fa-heart"></i> Lưu</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./shared/images/slide-1.png" class="card-img-top" alt="Đang tải...">
+                            <div class="card-body">
+                                <div class="card-rating">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="card-title">Tên của hàng được 34 ký tự...</div>
+                                <div class="card-text">Đây là địa chỉ....</div>
+                                <div class="card-info">Mở của: 08:00 - 16:00</div>
+                                <div class="card-produce"><i class="fa fa-tag ng-hide"></i>Coffee/Bán ngọt</div>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa fa-comment"> 200</i>
+                                <i class="fa-solid fa-heart"> 100</i>
+                                <button><i class="fa-solid fa-heart"></i> Lưu</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./shared/images/slide-1.png" class="card-img-top" alt="Đang tải...">
+                            <div class="card-body">
+                                <div class="card-rating">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="card-title">Tên của hàng được 34 ký tự...</div>
+                                <div class="card-text">Đây là địa chỉ....</div>
+                                <div class="card-info">Mở của: 08:00 - 16:00</div>
+                                <div class="card-produce"><i class="fa fa-tag ng-hide"></i>Coffee/Bán ngọt</div>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa fa-comment"> 200</i>
+                                <i class="fa-solid fa-heart"> 100</i>
+                                <button><i class="fa-solid fa-heart"></i> Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
