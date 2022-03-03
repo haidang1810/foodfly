@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vn">
+    <head>
+        <title>foodfly</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="../shared/node_modules/jquery/dist/jquery.js" ></script>
+        <link rel="shortcut icon" type="image/png" href="../shared/images/icon-web.png"/>
+        <link rel="stylesheet" href="../shared/node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../shared/node_modules/chosen-js/chosen.css">
+        <link rel="stylesheet" href="../shared/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand my-0" href="#">
+                    <img src="../shared/images/logo.png" alt="" width="65px" height="65px" class="d-inline-block align-text-top">
+                </a>
+                <form class="d-flex my-2 searchBar">
+                    <select id="select-city">
+                        <option value="1" selected>Hà Nội</option>
+                        <option value="2">TP. HCM</option>
+                        <option value="3">Cà Mau</option>
+                        <option value="4">Vũng Tàu</option>
+                    </select>
+                    <input class="searchBar__input" type="text" placeholder="Search">
+                    <button class="searchBar__button" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm</button>
+                </form>
+                <div class="navbar__info">
+                    <button class="navbar__info-nofi"><i class="fa-solid fa-bell"></i>Thông báo</button>
+                    <button class="navbar__info-login">Đăng nhập</button>
+                    <button class="navbar__info-signOut">Đăng ký</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="img-info">
+                <div class="main-img">
+                    <img src="../shared/images/slide-1.jpeg" class="main-img-item" alt="">
+                </div>
+                <div class="list-img">
+                    <button class="button-controll" id="btn-pre"><i class="fa fa-angle-left"></i></button>
+                    <div class="list-img-item">
+                        <img src="../shared/images/slide-1.jpeg" alt="">
+                        <img src="../shared/images/slide-2.jpeg" alt="">
+                        <img src="../shared/images/slide-3.jpeg" alt="">
+                        <img src="../shared/images/slide-4.jpeg" alt="">
+                        <img src="../shared/images/slide-5.jpeg" alt="">
+                        <img src="../shared/images/slide-6.jpeg" alt="">
+                    </div>
+                    <button class="button-controll" id="btn-next"><i class="fa fa-angle-right"></i></button>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <script src="./app.js"></script>
+        <script src="../shared/node_modules/@popperjs/core/dist/umd/popper.js"></script>
+        <script src="../shared/node_modules/bootstrap/dist/js/bootstrap.js" ></script>
+        <script src="../shared/node_modules/chosen-js/chosen.jquery.js"></script>
+        <script>
+            $("#select-city").chosen({
+                allow_single_deselect: true,
+                no_results_text: "Không tìm thấy kết quả :",
+                width: '100px'
+            });
+        </script>
+    </body>
+</html>
