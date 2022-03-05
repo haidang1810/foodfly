@@ -7,11 +7,9 @@
     background-color: #1A94FF !important;
 }
 body{
-    background: #f9f9f9;
+    background: #efefef;
 }
 .container-fluid{
-    /* margin-left: 50px !important;
-    margin-right: 50px !important; */
     padding-left: 50px !important;
     padding-right: 50px !important;
     margin: 0;
@@ -70,14 +68,16 @@ body{
     font-size: 16px;
 }
 .img-info{
-    margin-top: 20px;
-    width: 517px;
-    height: 570px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 527px;
+    height: 560px;
+    background-color: #f7f7f7;
 }
 .main-img,
 .main-img img{
     width: 100%;
-    height: 450px;
+    height: 430px;
     object-fit: contain;
     object-position: 50% 0;
 }
@@ -87,12 +87,13 @@ body{
     width: 100%;
     height: 120px;
     display: flex;
+    align-items: center;
 }
 .list-img-item{
     padding: 0;
     margin: 0 5px;
     overflow: scroll;
-    width: 317px;
+    width: 417px;
     height: 100px;
     display: flex;
     justify-content: left;
@@ -114,8 +115,8 @@ body{
 }
 
 .button-controll{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background: #e6e6e6;
     display: block;
     border: none;
@@ -125,4 +126,70 @@ body{
 .button-controll i{
     font-size: 20px;
     color: black;
+}
+.content-right{
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #f7f7f7;
+    padding: 5px 20px;
+}
+.info-title{
+    font-size: 22px;
+    font-weight: 650;
+}
+.info-category{
+    color: #828282;
+    font-size: 14px;
+}
+.info-location,
+.info-open-time,
+.info-price,
+.info-segment{
+    color: #2d2d2d;
+    font-size: 14px;
+}
+.info-open i{
+    font-size: 12px;
+}
+.isOpen{
+    color: #05CD15;
+    font-weight: bold;
+}
+.isClose{
+    color: #DC3545;
+    font-weight: bold;
+}
+.rating-number{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.rating-total{
+    color: #2d2d2d;
+    font-size: 14px;
+}
+.rating-star{
+    margin-bottom: 5px;
+}
+.checked{
+    color: #FFA500;
+}
+.info-rating-right{
+    padding-top: 20px;
+}
+.rating-type{
+    margin-right: 10px;
+}
+.rating-type{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.rating-type span{
+    transform: translate(0, -22%);
+    margin-right: 10px;
+}
+.progress{
+    width: 80%;
+    margin-bottom: 10px;
 }

@@ -1,4 +1,4 @@
-$(".list-img-item img").hover(function(){
+$(".list-img-item img").click(function(){
     $(".list-img-item img").each(function(){
         $(this).removeClass('hover-img');
     });
