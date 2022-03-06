@@ -193,3 +193,107 @@ body{
     width: 80%;
     margin-bottom: 10px;
 }
+.list-tool{
+    margin-top: 20px;
+}
+.list-tool ul li {
+    list-style: none;
+    padding: 5px;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+}
+.list-tool-active{
+    color: #0D6EFD;
+    border-left: 1px solid #0D6EFD;
+}
+.list-item-number{
+    font-size: 10px;
+    color: #828282;
+}
+.main-info-content{
+    margin: 20px 0 0 20px;
+    background: #fff;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.main-info-content-title{
+    font-size: 26px;
+    font-weight: 450;
+    margin: 22px 10px;
+    padding: 5px 10px;
+    background: #efefef;
+    border-radius: 5px;
+}
+.main-info-content-text{
+    padding-left: 22px;
+}
+.main-info-content img{
+    width: 80%;
+    object-fit: contain;
+}
+.main-info-content-list-img{
+    padding-left: 22px;
+    margin-left: -10px;
+    width: calc(100% + 42px);
+}
+.main-info-content-list-img img{
+    width: calc(20% - 22px);
+    height: 160px;
+    object-fit: cover;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.search-item{
+    border: 1px solid #efefef;
+    margin-left: 12px;
+    width: calc(100% - 22px);
+}
+.search-group{
+    padding-left: 10px;
+    margin: 0;
+    color: #4B464C;
+}
+.search-group input {
+    font-size: 18px;
+    border: none;
+    padding: 10px 5px;
+    outline: none;
+}
+.menu-list-item{
+    width: calc(100% - 22px);
+}
+.menu-item{
+    border-bottom: 1px solid #efefef;
+    margin-left: 12px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+.menu-item button {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border: none;
+}
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-item-info{
+    color: #4B464C;
+    margin-left: 5px;
+    width: 60% !important;
+}
+.menu-item-info-name{
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-item-info-description{
+    font-size: 14px;
+}
+.menu-item-price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #0D6EFD;
+}
