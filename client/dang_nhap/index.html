@@ -18,7 +18,7 @@
                         <div class="form-group">
                             <label for="userName" >Tài khoản</label>
                             <div class="form__input">
-                                <input type="text" id="userName" rules='required|min:4|max:20' name="userName" class="form-control mb-2 shadow-none form__input-text" placeholder="Nhập tài khoản...">
+                                <input type="text" id="userName" rules='required|min:4|max:50' name="userName" class="form-control mb-2 shadow-none form__input-text" placeholder="Nhập tài khoản...">
                                 <i class="fa-solid fa-user form__input-icon"></i>
                                 <div class="form__input-line"></div>
                             </div>
@@ -27,7 +27,7 @@
                         <div class="form-group mt-2">
                             <label for="password">Mật khẩu</label>
                             <div class="form__input">
-                                <input type="password" id="password" rules='required|min:4|max:20' name="password" class="form-control mb-2 shadow-none form__input-text " placeholder="Nhập mật khẩu...">
+                                <input type="password" id="password" rules='required|min:3|max:20' name="password" class="form-control mb-2 shadow-none form__input-text " placeholder="Nhập mật khẩu..." autocomplete="off">
                                 <i class="fa-solid fa-lock form__input-icon"></i>
                                 <div class="form__input-line"></div>
                             </div>
@@ -35,14 +35,15 @@
                         </div>
                         <div class="form-check mb-3 col-md-5 col-md-12">
                             <label class="form-check-label form__input-lable">
-                                <input type="checkbox" class="form-check-input form__input-check"  id="" value="checkedValue">
+                                <input type="checkbox" class="form-check-input form__input-check"  name="remember" value="isRemember">
                                 Ghi nhớ đăng nhập
                             </label>
                             <a href="#" class="form__input-lable">Quên mật khẩu?</a>
                         </div>
                         <div class="button">
-                            <input type="submit" value="Đăng nhập" class="wpcf7-form-control wpcf7-submit">
+                            <button id="submitLogin" class="wpcf7-form-control wpcf7-submit">Đăng nhập</button>
                         </div>
+                        <span class="msg-req"></span>
                     </form>
                     <div class="d-flex justify-content-center mt-2 form__login-text">
                         <p>Đăng nhập bằng</p>
@@ -66,8 +67,28 @@
             validator('.form-login',{
                 formGroup: '.form-group',
                 formMessage: '.form-message',
-                onSubmit: function(){
-                    console.log("call ajax");
+                onSubmit: function(formValues){
+                    var remember = 0;
+                    if(formValues.remember!="")
+                        remember = 1;
+                    $.post('../../server/authen.php',{
+                        'action': 'login',
+                        'username': formValues.userName,
+                        'password': formValues.password,
+                        'remember': remember
+                    },function(data,statusCode){
+                        if(statusCode=='success'){
+                            var obj = JSON.parse(data);
+                            if(obj.status==1){
+                                window.open('../index.html', '_self');
+                            }else{
+                                $('.msg-req').html(obj.msg);
+                            }
+                        }else if(statusCode=='notmodified')
+                            alert('notmodified');
+                            else if(statusCode=='timeout')
+                                alert('timeout');
+                    })
                 }
             });
         </script>

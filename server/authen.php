@@ -23,6 +23,8 @@
             break;
         case 'enable': 
             doEnable();
+        case 'autoLogin':
+            doAutoLogin();
             break;
     }
 
@@ -44,6 +46,7 @@
                     'status' => 1,
                     'msg' => 'Đăng nhập thành công.'
                 ];
+                $_SESSION['user'] = $username;
             }else $res = [
                 'status' => 2,
                 'msg' => 'Mật khẩu không chính xác.'
@@ -53,6 +56,18 @@
             'msg' => 'Tài khoản không chính xác.'
         ];
 
+        echo json_encode($res);
+    }
+    function doAutoLogin(){
+        if(authenToken()!=null){
+            $res = [
+                'status' => 1,
+                'msg' => 'Đăng nhập thành công.'
+            ];
+        }else $res = [
+            'status' => 2,
+            'msg' => 'Chưa lưu đăng nhập.'
+        ];
         echo json_encode($res);
     }
     function doRegister(){

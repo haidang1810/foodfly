@@ -12,6 +12,16 @@ Authen:
             'status': 1 (1: success, 2: failed),
             'msg': "msg error"
         }
+    API: autoLogin
+        - URL: /foodfly/server/authen.php/?action=autoLogin
+        - Method: POST
+        - Request: {
+            'action': 'autoLogin'
+        }
+        - Response: {
+            'status': 1 (1: success, 2: failed),
+            'msg': "msg error"
+        }
     API: register
         - URL: /foodfly/server/authen.php
         - Method: POST

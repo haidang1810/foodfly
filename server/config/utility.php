@@ -28,7 +28,6 @@
 
         if ($result != null && count($result) > 0) {
             $_SESSION['user'] = $result['TaiKhoan'];
-
             return $result['TaiKhoan'];
         }
 
