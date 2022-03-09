@@ -3,52 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 100% !important;
-}
-.main{
-    display: flex !important;
-    justify-content: left !important;
 
-}
-.content{
-    width: 100%;
-    background-color: #eaeef7;
-    padding: 20px;
-}
-.content-title{
-    font-size: 1.75rem;
-    color: #5a5c69;
-    font-weight: 400;
-}
-.card{
-    border-radius: 8px;
-}
-
-.border-left-primary{
-    border-left: 4px solid #4e73df;
-}
-.border-left-success{
-    border-left: 4px solid #198754;
-}
-.border-left-info{
-    border-left: 4px solid #0dcaf0;
-}
-.border-left-warning{
-    border-left: 4px solid #ffc107;
-}
-.card-text{
-    font-size: 1.25rem;
-    color: #343a40;
-    font-weight: 700;
-}
-.card-icon{
-    color: #dee2e6;
-}
-.card-header{
-    background-color: #eff1f8 !important;
-}
-#chart-view{
-    width: 100%;
-    height: 100%;
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }

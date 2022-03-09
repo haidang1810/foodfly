@@ -48,7 +48,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="../cua_hang/index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Cửa hàng</span></a>
             </li>
@@ -70,7 +70,16 @@
                     </div>
                 </div>
             </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
+            <!-- Nav Item  -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-bell fa-fw"></i>
+                    <span>Thông báo</span></a>
+            </li>
+            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -193,6 +202,108 @@
 
                     <!-- Content Row -->
                     <div class="row">
+                        <!-- Area Chart -->
+                        <div class="col-xl-9 col md-12">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Danh sách cửa hàng</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body row-list-store">
+                                    <label id="label-item" for="store-1">
+                                        <div class="store-item row">
+                                        
+                                            <div class="store-item-img col-3">
+                                                <img src="../../shared/images/slide-1.jpeg" alt="">
+                                            </div>
+                                            <div class="store-item-name col-2">
+                                                Trà Sữa Coco Tea And Coffee
+                                            </div>
+                                            <div class="store-item-address col-6">
+                                                Gần Ngã 3 Chợ Vượt Lũ, Đường Nguyễn Văn Lâu, P.8, Tp.Vĩnh Long,  Thành Phố Vĩnh Long, Vĩnh Long
+                                            </div>
+                                            <input type="checkbox" id="store-1" class="store-item-check col-1">
+                                        </div>
+                                    </label>
+                                    <label id="label-item" for="store-2">
+                                        <div class="store-item row">
+                                        
+                                            <div class="store-item-img col-3">
+                                                <img src="../../shared/images/slide-2.jpeg" alt="">
+                                            </div>
+                                            <div class="store-item-name col-2">
+                                                Trà Sữa Coco Tea And Coffee
+                                            </div>
+                                            <div class="store-item-address col-6">
+                                                Gần Ngã 3 Chợ Vượt Lũ, Đường Nguyễn Văn Lâu, P.8, Tp.Vĩnh Long,  Thành Phố Vĩnh Long, Vĩnh Long
+                                            </div>
+                                            <input type="checkbox" id="store-2" class="store-item-check col-1">
+                                        </div>
+                                    </label>
+                                    <label id="label-item" for="store-3">
+                                        <div class="store-item row">
+                                        
+                                            <div class="store-item-img col-3">
+                                                <img src="../../shared/images/slide-3.jpeg" alt="">
+                                            </div>
+                                            <div class="store-item-name col-2">
+                                                Trà Sữa Coco Tea And Coffee
+                                            </div>
+                                            <div class="store-item-address col-6">
+                                                Gần Ngã 3 Chợ Vượt Lũ, Đường Nguyễn Văn Lâu, P.8, Tp.Vĩnh Long,  Thành Phố Vĩnh Long, Vĩnh Long
+                                            </div>
+                                            <input type="checkbox" id="store-3" class="store-item-check col-1">
+                                        </div>
+                                    </label>
+                                    <label id="label-item" for="store-4">
+                                        <div class="store-item row">
+                                        
+                                            <div class="store-item-img col-3">
+                                                <img src="../../shared/images/slide-4.jpeg" alt="">
+                                            </div>
+                                            <div class="store-item-name col-2">
+                                                Trà Sữa Coco Tea And Coffee
+                                            </div>
+                                            <div class="store-item-address col-6">
+                                                Gần Ngã 3 Chợ Vượt Lũ, Đường Nguyễn Văn Lâu, P.8, Tp.Vĩnh Long,  Thành Phố Vĩnh Long, Vĩnh Long
+                                            </div>
+                                            <input type="checkbox" id="store-4" class="store-item-check col-1">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-12">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Chọn ngày</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <form >
+                                        <div>
+                                            <label for="timeStart" class="form-label mb-0 p-0">Từ ngày</label>
+                                            <input type="date"  id="timeStart" class="form-control mb-3">
+                                        </div>
+                                        <div>
+                                            <label for="timeEnd" class="form-label mb-0 p-0">Đến ngày</label>
+                                            <input type="date"  id="timeEnd" class="form-control mb-3">
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-primary">Thống kê</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
 
                         <!-- Card lượt xem -->
                         <div class="col-xl-3 col-md-6 mb-4">
@@ -275,98 +386,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-                        <!-- Area Chart -->
-                        <div class="col-xl-9 col md-12">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Danh sách cửa hàng</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body row-list-store">
-                                    <label id="label-item" for="store-1">
-                                        <div class="store-item row">
-                                        
-                                            <div class="store-item-img col-2">
-                                                <img src="../../shared/images/slide-1.jpeg" alt="">
-                                            </div>
-                                            <div class="store-item-name col-3">
-                                                Trà Sữa Coco Tea And Coffee
-                                            </div>
-                                            <div class="store-item-address col-6">
-                                                Gần Ngã 3 Chợ Vượt Lũ, Đường Nguyễn Văn Lâu, P.8, Tp.Vĩnh Long,  Thành Phố Vĩnh Long, Vĩnh Long
-                                            </div>
-                                            <input type="checkbox" id="store-1" class="store-item-check col-1">
-                                        </div>
-                                    </label>
-                                    <label id="label-item" for="store-2">
-                                        <div class="store-item row">
-                                        
-                                            <div class="store-item-img col-2">
-                                                <img src="../../shared/images/slide-2.jpeg" alt="">
-                                            </div>
-                                            <div class="store-item-name col-3">
-                                                Trà Sữa Coco Tea And Coffee
-                                            </div>
-                                            <div class="store-item-address col-6">
-                                                Gần Ngã 3 Chợ Vượt Lũ, Đường Nguyễn Văn Lâu, P.8, Tp.Vĩnh Long,  Thành Phố Vĩnh Long, Vĩnh Long
-                                            </div>
-                                            <input type="checkbox" id="store-2" class="store-item-check col-1">
-                                        </div>
-                                    </label>
-                                    <label id="label-item" for="store-3">
-                                        <div class="store-item row">
-                                        
-                                            <div class="store-item-img col-2">
-                                                <img src="../../shared/images/slide-3.jpeg" alt="">
-                                            </div>
-                                            <div class="store-item-name col-3">
-                                                Trà Sữa Coco Tea And Coffee
-                                            </div>
-                                            <div class="store-item-address col-6">
-                                                Gần Ngã 3 Chợ Vượt Lũ, Đường Nguyễn Văn Lâu, P.8, Tp.Vĩnh Long,  Thành Phố Vĩnh Long, Vĩnh Long
-                                            </div>
-                                            <input type="checkbox" id="store-3" class="store-item-check col-1">
-                                        </div>
-                                    </label>
-                                    <label id="label-item" for="store-4">
-                                        <div class="store-item row">
-                                        
-                                            <div class="store-item-img col-2">
-                                                <img src="../../shared/images/slide-4.jpeg" alt="">
-                                            </div>
-                                            <div class="store-item-name col-3">
-                                                Trà Sữa Coco Tea And Coffee
-                                            </div>
-                                            <div class="store-item-address col-6">
-                                                Gần Ngã 3 Chợ Vượt Lũ, Đường Nguyễn Văn Lâu, P.8, Tp.Vĩnh Long,  Thành Phố Vĩnh Long, Vĩnh Long
-                                            </div>
-                                            <input type="checkbox" id="store-4" class="store-item-check col-1">
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-12">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Chọn ngày</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <!-- content row -->
                     <div class="row">
 
                         <!-- Area Chart -->

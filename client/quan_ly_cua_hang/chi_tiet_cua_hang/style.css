@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.avatar-store img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+}
