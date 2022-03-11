@@ -6,7 +6,119 @@
 .avatar-store img{
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 450px;
     object-fit: cover;
     cursor: pointer;
+}
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.text-error{
+    font-size: 16px;
+    color: #ff0000;
+}
+.list-img-store{
+    min-height: 500px;
+    overflow-y: scroll;
+}
+.list-img-store img ,
+.open-modal-upload-img{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.open-modal-upload-img{
+    background: #c9c9c9;
+    line-height: 120px;
+    display: inline-block;
+}
+.list-rating{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.rating-item{
+    margin-bottom: 20px;
+}
+.hearder-rating{
+    height: 60px;
+    width: 100%;
+}
+.hearder-rating img {
+    height: 100%;
+    width: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.star-rating{
+    margin-top: 10px;
+}
+.star-rating span{
+    margin-left: 10px;
+}
+.checked {
+    color: #FFA500;
+}
+.modal-content-list_img{
+    background: #000 !important;
+    position: relative;
+    width: 800px !important;
+    height: 550px !important;
+    margin-left: -25%;
+}
+.modal-content-left,
+.modal-content-right{
+    background: transparent !important;
+    padding: 0 !important;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    z-index: 1;
+}
+.modal-content-left{
+    left: 0;
+    top: 0;
+}
+.modal-content-right{
+    right: 0;
+    top: 0;
+}
+.modal-content-center{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 ;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.modal-content-center img {
+    max-width: 100%;
+    height: 100% !important;
+    object-fit: contain;
+    z-index: -1;
+}
+.modal-img-btn{
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 24px;
+}
+.form-check-label img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.form-check-label input{
+    margin-left: 50% !important;
+    transform: translate(-50%,0) !important;
 }
