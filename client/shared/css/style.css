@@ -58,12 +58,18 @@ body{
 .navbar__info{
     height: 35px;
 }
+.navbar__info a,
 .navbar__info button{
     background: transparent;
     color: white;
     border: none;
     font-size: 14px;
     margin-right: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+a, a:visited, a:hover, a:active {
+    color: #fff;
 }
 .navbar__info-nofi i{
     margin-right: 5px;

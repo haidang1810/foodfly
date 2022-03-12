@@ -30,7 +30,6 @@ Authen:
             'fullName': 'hai dang',
             'username': 'danghuynh123',
             'password': 'eqwq123',
-            'gmail': 'danghuynh.dev@gmail.com',
             'type': 1
         }
         - Response: {

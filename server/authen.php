@@ -74,27 +74,19 @@
         $fullName = getPOST('fullName');
         $username = getPOST('username');
         $password = md5Security(getPOST('password'));
-        $gmail = getPOST('gmail');
         if(getPOST('type'))
             $type = getPOST('type');
         else $type = 1;
         $checkUser = "SELECT TaiKhoan FROM tb_nguoi_dung WHERE TaiKhoan='$username'";
         $resultUser = executeResult($checkUser,true);
-        $checkGmail = "SELECT TaiKhoan FROM tb_nguoi_dung WHERE Gmail='$gmail'";
-        $resultGmail = executeResult($checkGmail,true);
         if($resultUser!=null){
             $res = [
                 'status' => 2,
                 'msg' => 'Tài khoản đã tồn tại.'
             ];
-        }else if($resultGmail!=null){
-            $res = [
-                'status' => 2,
-                'msg' => 'Gmail đã tồn tại.'
-            ];
         }else{
-            $user = "INSERT INTO tb_nguoi_dung(TaiKhoan,MatKhau,Gmail,LoaiND,TrangThai)
-            VALUES('$username','$password','$gmail',$type,1)";
+            $user = "INSERT INTO tb_nguoi_dung(TaiKhoan,MatKhau,LoaiND,TrangThai)
+            VALUES('$username','$password',$type,1)";
             if(execute($user)){
                 $info = "INSERT INTO tb_thong_tin_ca_nhan(TaiKhoan,HoTen)
                 VALUES('$username','$fullName')";

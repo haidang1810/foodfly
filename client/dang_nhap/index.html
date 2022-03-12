@@ -27,7 +27,7 @@
                         <div class="form-group mt-2">
                             <label for="password">Mật khẩu</label>
                             <div class="form__input">
-                                <input type="password" id="password" rules='required|min:3|max:20' name="password" class="form-control mb-2 shadow-none form__input-text " placeholder="Nhập mật khẩu..." autocomplete="off">
+                                <input type="password" id="password" rules='required|min:4|max:20' name="password" class="form-control mb-2 shadow-none form__input-text " placeholder="Nhập mật khẩu..." autocomplete="off">
                                 <i class="fa-solid fa-lock form__input-icon"></i>
                                 <div class="form__input-line"></div>
                             </div>
@@ -43,7 +43,6 @@
                         <div class="button">
                             <button id="submitLogin" class="wpcf7-form-control wpcf7-submit">Đăng nhập</button>
                         </div>
-                        <span class="msg-req"></span>
                     </form>
                     <div class="d-flex justify-content-center mt-2 form__login-text">
                         <p>Đăng nhập bằng</p>
@@ -62,6 +61,7 @@
         <script src="../shared/js/config.js"></script>
         <script src="../shared/node_modules/@popperjs/core/dist/umd/popper.js"></script>
         <script src="../shared/node_modules/bootstrap/dist/js/bootstrap.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="../shared/js/validator.js" type="text/javascript"></script>
         <script src="./app.js"></script>
     </body>
