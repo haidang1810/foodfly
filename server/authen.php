@@ -23,7 +23,7 @@
             break;
         case 'enable': 
             doEnable();
-        case 'autoLogin':
+        case 'sessionLogin':
             doAutoLogin();
             break;
     }
@@ -60,13 +60,16 @@
     }
     function doAutoLogin(){
         if(authenToken()!=null){
+            $hoTen = authenToken();
             $res = [
                 'status' => 1,
-                'msg' => 'Đăng nhập thành công.'
+                'msg' => 'Đăng nhập thành công.',
+                'fullName' => $hoTen
             ];
         }else $res = [
             'status' => 2,
-            'msg' => 'Chưa lưu đăng nhập.'
+            'msg' => 'Chưa lưu đăng nhập.',
+            'fullName' => ''
         ];
         echo json_encode($res);
     }
@@ -124,7 +127,6 @@
                     'homeTown'=> $item['QueQuan'],
                     'yearBirth'=> $item['NamSinh'],
                     'phone'=> $item['SDT'],
-                    'exp'=> $item['KinhNghiemKD'],
                     'avatar'=> $item['avatar']
                 ]);
             }

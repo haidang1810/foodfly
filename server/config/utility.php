@@ -23,12 +23,14 @@
             return null;
         }
 
-        $sql    = "select TaiKhoan, Tokken from tb_nguoi_dung where Tokken = '$token'";
+        $sql = "select tb_nguoi_dung.TaiKhoan, Tokken, tb_thong_tin_ca_nhan.HoTen
+        from tb_nguoi_dung, tb_thong_tin_ca_nhan 
+        where Tokken = '$token' and tb_nguoi_dung.TaiKhoan=tb_thong_tin_ca_nhan.TaiKhoan";
         $result = executeResult($sql,true);
 
         if ($result != null && count($result) > 0) {
             $_SESSION['user'] = $result['TaiKhoan'];
-            return $result['TaiKhoan'];
+            return $result['HoTen'];
         }
 
         return null;

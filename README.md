@@ -12,14 +12,15 @@ Authen:
             'status': 1 (1: success, 2: failed),
             'msg': "msg error"
         }
-    API: autoLogin
-        - URL: /foodfly/server/authen.php/?action=autoLogin
+    API: sessionLogin
+        - URL: /foodfly/server/authen.php/?action=sessionLogin
         - Method: POST
         - Request: {
-            'action': 'autoLogin'
+            'action': 'sessionLogin'
         }
         - Response: {
             'status': 1 (1: success, 2: failed),
+            'fullName': 'dsáđấ' 
             'msg': "msg error"
         }
     API: register
@@ -53,8 +54,7 @@ Authen:
                         'fullName': 'hai dang',
                         'homeTown': "ca mau",
                         'yearBirth': '1999',
-                        'phone': '01234718274',
-                        'exp': "10 năm",
+                        'phone': '01234718274'
                         'avatar': "../item/avatar/dang.png"
                     }
                 ]
@@ -82,3 +82,63 @@ Authen:
             'msg': "msg error"
         }
 
+Store:
+    API: list
+        - URL: /foodfly/server/store.php
+        - Method: GET
+        - Request: {
+            'action': 'list'
+        }
+        - Response: {
+            'status': 1 (1: success, 2: failed),
+            'msg': "msg error",
+            'storeList': [{
+                'id': 'fdsfdsewr32342frde23r',
+                'name': 'Trà sữa cocco',
+                'shopkeeper': '11',
+                'avatar': 'fdsfsdgfdgf',
+                'address': '3/2 P1 Vĩnh Long',
+                'timeOpen': '08:00 - 16:00',
+                'segment': 'Cao cấp',
+                'priceRange': '25.000 - 100.000',
+                'submitDate': '23/3/2021',
+                'acceptDate': '25/3/2021',
+                'status': 1, (1 còn hoạt động, 0 ngừng kinh doanh)
+                'acceptUser': 'danghuynh123'
+            }]
+        }
+    API: detail
+        - URL: /foodfly/server/store.php
+        - Method: GET
+        - Request: {
+            'action': 'detail'
+        }
+        - Response: {
+            'status': 1 (1: success, 2: failed),
+            'msg': "msg error",
+            'id': 'fdsfdsewr32342frde23r',
+            'name': 'Trà sữa cocco',
+            'address': '3/2 P1 Vĩnh Long',
+            'timeOpen': '08:00 - 16:00'
+            'segment': 'Cao cấp',
+            'priceRange': '25.000 - 100.000',
+            'imgList': [
+                'gdfgfdgdf','rewrewrew','fdsfdsfds'
+            ]
+        }
+    API: register
+    - URL: /foodfly/server/store.php
+    - Method: POST
+    - Request: {
+        'action': 'register',
+        'name': 'TocoToco Bubble Tea - Phan Đình Phùng',
+        'avatar': 'fdsfdsfdsfdsfsfdsfds'
+        'address': '50 Phan Đình Phùng, TP. HCM',
+        'timeOpen': '08:00 - 16:00'
+        'segment': 'Cao cấp',
+        'priceRange': '25.000 - 100.000',
+    }
+    - Response: {
+            'status': 1 (1: success, 2: failed),
+            'msg': "msg error"
+        }

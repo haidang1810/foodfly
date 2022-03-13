@@ -154,10 +154,17 @@ a, a:visited, a:hover, a:active {
     color: #FFA500;
 }
 .card-title,
+.card-text{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important
+}
+.card-title,
 .card-info{
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 5px;
+    ;
 }
 .card-text{
     font-size: 14px;

@@ -1,25 +1,14 @@
-// $(".header__button").click(function(){
-//     $(".main-menu").toggleClass('show-menu');
-//     if($('.menu-item-title').length > 0){
-//         $(".menu-subItem-btn span").toggleClass('menu-item-title');
-//         $(".menu-item span").toggleClass('menu-item-title');
-//         $("#icon-group").css("display","none");
-//     }else{
-//         setTimeout(() => {
-//             $(".menu-subItem-btn span").toggleClass('menu-item-title');
-//             $(".menu-item span").toggleClass('menu-item-title');
-//         }, 250);
-//         setTimeout(() => {
-//             $("#icon-group").css("display","block");
-//         }, 300);
-//     }
+function createStoreCard(){
     
-// })
-// $(".group-item").each(function(){
-//     let subItemBtn = $(this);
-//     subItemBtn.children('.menu-item').click(function(){
-//         subItemBtn.children('#menu-subItem').toggleClass('menu-subItem');
-//         subItemBtn.children('.menu-item').children('#icon-group').toggleClass('arrow-right');
-//     })
-    
-// })
+}
+$.get(BASE_URL+API_STORE+'/?action='+STORE_LIST,function(data,statusCode){
+    if(statusCode=='success'){
+        var obj = JSON.parse(data);
+        if(obj.status==1){
+            
+        }
+    }else if(statusCode=='notmodified')
+        alert('notmodified');
+        else if(statusCode=='timeout')
+            alert('timeout');
+})

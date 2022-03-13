@@ -7,4 +7,11 @@ var AUTHEN_REGISTER = 'register';
 var AUTHEN_LIST = 'list';
 var AUTHEN_DISABLE = 'disable';
 var AUTHEN_ENABLE = 'enable';
-var AUTHEN_AUTOLOGIN = 'autoLogin';
+var AUTHEN_AUTOLOGIN = 'sessionLogin';
+
+//
+var API_STORE = 'store.php';
+
+var STORE_LIST = 'list';
+var STORE_DETAIL = 'detail';
+var STORE_REGISTER = 'register';

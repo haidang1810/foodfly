@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.text-error{
+    font-size: 16px;
+    color: #ff0000;
+}
+.list-img-store{
+    min-height: 500px;
+    overflow-y: scroll;
+}
+.list-img-store img ,
+.open-modal-upload-img{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.open-modal-upload-img{
+    background: #c9c9c9;
+    line-height: 120px;
+    display: inline-block;
+}
